@@ -13,9 +13,9 @@ int main()
     window.setFramerateLimit(60);
 	ball.shape.setRadius(20); //радиус шара
     Texture textureOfBackground; //объявление объекта текстуры
-    if (!(background.loadFromFile("cherry.jpg")))//фон берём из файла
+    if (!(textureOfBackground.loadFromFile("cherry.jpg")))//фон берём из файла
     {
-        background.loadFromFile("../cherry.jpg");
+        textureOfBackground.loadFromFile("../cherry.jpg");
     }
     Sprite background(textureOfBackground);//создание спрайта заднего фона
  
